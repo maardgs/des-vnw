@@ -8,13 +8,13 @@ function Header() {
                 <ul>
                     <li>
                         <Link to ="/">Home</Link>
-                        </li>
+                    </li>
                     <li>
                         <Link to="/novidades">Novidades</Link>
-                        </li>
+                    </li>
                     <li>
                         <Link to ="/sobre">Sobre</Link>
-                        </li>
+                    </li>
                 </ul>
             </nav>
         </header>
