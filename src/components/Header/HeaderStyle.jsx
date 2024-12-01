@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header` // Nome atualizado para refletir o padrão dos componentes
+export const StyledHeader = styled.header`
   nav {
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@ export const StyledHeader = styled.header` // Nome atualizado para refletir o pa
     margin: 0 4vw;
   }
 
-  img.logo { // Adicionei uma classe para a imagem de logo para maior especificidade
+  img.logo {
     height: 9vh;
   }
 

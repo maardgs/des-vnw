@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledNovidades = styled.main` // Nome atualizado para refletir a importação correta do estilo
+export const StyledNovidades = styled.main` 
   section {
     display: flex;
     justify-content: space-around;
@@ -9,16 +9,16 @@ export const StyledNovidades = styled.main` // Nome atualizado para refletir a i
     background-color: #1e3932;
   }
 
-  img.coffeeImage { // Adicionei uma classe para diferenciar o estilo da imagem
+  img.coffeeImage { 
     height: 40vh;
   }
 
-  div.contentWrapper { // Renomeei a div principal para refletir seu propósito
+  div.contentWrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start; // Especificidade na direção do alinhamento
+    align-items: flex-start; 
     color: #ffffff;
     width: 40%;
     height: 40%;
@@ -37,7 +37,7 @@ export const StyledNovidades = styled.main` // Nome atualizado para refletir a i
       font-size: 1.5rem;
     }
 
-    button.learnMoreButton { // Renomeado para descrever a função do botão
+    button.learnMoreButton { 
       font-family: Inter;
       font-size: 1.5rem;
       color: #ffffff;

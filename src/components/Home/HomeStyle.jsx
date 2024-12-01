@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
-export const StyledHome = styled.main` // Nome atualizado para refletir a importação correta do estilo
-  main {
-    height: 85vh;
-  }
+export const StyledHome = styled.main`
+  height: 85vh;
 
-  section {
+  #adSection {
     display: flex;
     justify-content: space-between;
-  }
-
-  #adSection { // Renomeado para refletir o propósito do conteúdo de anúncio
+    align-items: center;
     font-family: Poppins;
-    font-size: 3.4rem;
-    padding: 10vh 0 10vh 5vw;
+    padding: 10vh 5vw;
     height: 60vh;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+    }
   }
 
   h3 {
@@ -26,71 +26,84 @@ export const StyledHome = styled.main` // Nome atualizado para refletir a import
     font-weight: 400;
     font-size: 3.6rem;
 
-    h1 {
+    .highlighted {
       color: #037143;
       display: inline;
     }
   }
 
-  #adContent { // Renomeado para "adContent" (antes "enunciado") para dar clareza ao papel da div
-    width: 800px;
-  }
-
   p {
     font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
-  #circleWrapper { // Renomeado para indicar que é um wrapper de círculo
-    border-radius: 1000px;
-    width: 1200px;
-    height: 1200px;
+  #adContent {
+    width: 50%;
+  }
 
+  #circleWrapper {
+    border-radius: 80%;
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 500px;
-    top: 200px;
-    z-index: -1;
+    z-index: 1;
+    
 
-    img {
-      height: 50vh;
+
+    img#mainCup {
+      height: 90%;
+    }
+
+    @media (max-width: 768px) {
+      width: 80vw;
+      height: 80vw;
+      margin-top: 2rem;
     }
   }
 
-  #optionsSection { // Nome atualizado para indicar que controla as opções de visualização
+  #optionsSection {
     display: flex;
     justify-content: center;
-    height: 10vh;
+    align-items: center;
     margin: 5vh 0;
-  }
 
-  button.sampleButton { // Nome da classe atualizado para um padrão mais claro
-    background-color: transparent; // Alterado para melhorar legibilidade
-    border: none;
-    margin: 0 1%;
+    button.sampleButton {
+      background-color: transparent;
+      border: none;
+      margin: 0 1%;
 
-    img {
-      height: 12vh;
-
-      &:hover {
-        cursor: pointer;
-        transform: rotate(10deg) translateY(-10px);
+      img {
+        height: 12vh;
         transition: transform 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          transform: rotate(10deg) translateY(-10px);
+        }
       }
     }
   }
 
-  button#learnMore { // Renomeado para descrever claramente o botão de "SAIBA MAIS"
+  #learnMoreButton {
     font-family: Inter;
     font-size: 1.5rem;
     color: #ffffff;
     background-color: #037143;
     border-radius: 30px;
-    border-style: none;
+    border: none;
     width: 15vw;
     height: 5vh;
 
     &:hover {
       cursor: pointer;
       background-color: #195324;
+    }
+
+    @media (max-width: 768px) {
+      width: 70%;
     }
   }
 `;

@@ -1,28 +1,40 @@
 import styled from "styled-components";
 
-export const StyledAbout = styled.main` // Nome atualizado para refletir o padr√£o
+export const StyledAbout = styled.main`
   section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     height: 85vh;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: auto;
+    }
   }
 
-  img.storeImage { // Classe adicionada para maior especificidade
+  img.aboutStoreImage { 
     height: 50vh;
+
+    @media (max-width: 768px) {
+      height: auto;
+      width: 90%;
+    }
   }
 
-  div.contentWrapper { // Classe renomeada para maior clareza
+  div.contentWrapper { 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-
     width: 40%;
     height: 40%;
     font-family: Poppins;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
 
     h2 {
       font-family: Inter;
@@ -37,7 +49,7 @@ export const StyledAbout = styled.main` // Nome atualizado para refletir o padr√
       font-size: 1.5rem;
     }
 
-    button.learnMoreButton { // Renomeei a classe do bot√£o para ser mais descritiva
+    button.learnMoreButton {
       font-family: Inter;
       font-size: 1.5rem;
       color: #ffffff;
@@ -50,6 +62,10 @@ export const StyledAbout = styled.main` // Nome atualizado para refletir o padr√
       &:hover {
         cursor: pointer;
         background-color: #195324;
+      }
+
+      @media (max-width: 768px) {
+        width: 70%;
       }
     }
   }
