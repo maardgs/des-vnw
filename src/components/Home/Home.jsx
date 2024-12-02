@@ -42,9 +42,9 @@ function Home() {
                     </p>
                     <button id="learnMoreButton">SAIBA MAIS</button>
                 </div>
-                <div id="circleWrapper" style={{ backgroundColor }}>
-                    <img id="mainCup" src={currentCup} alt="Um copo grande mostrando uma deliciosa bebida gelada" />
-                </div>
+                <div id="circleWrapper"> 
+                    <div id="backgroundCircle" style={{ backgroundColor }}></div>
+                    <img id="mainCup" src={currentCup} alt="Um copo grande mostrando uma deliciosa bebida gelada" /></div>
             </section>
             <section id="optionsSection">
                 <button className="sampleButton" onClick={showOrangeCup}>

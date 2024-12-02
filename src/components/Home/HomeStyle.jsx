@@ -38,23 +38,38 @@ export const StyledHome = styled.main`
   }
 
   #adContent {
-    width: 50%;
+    width: 80%;
   }
 
-  #circleWrapper {
-    border-radius: 80%;
-    width: 40vw;
+ #circleWrapper {
+    position: relative; 
+    width: 80vw; 
     height: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    
+    top: 30vh;
+    left: 20vw;
+}
+
+#backgroundCircle {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 80%; 
+    z-index: -1; 
+    clip-path: polygon(0 0, 80% 0, 100% 80%, 0 80%);
+    overflow: hidden;
+
+}
+
+#mainCup {
+    position: absolute; 
+    top: 22%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    height: 80%; 
+    z-index: 2; 
+}
 
 
-    img#mainCup {
-      height: 90%;
     }
 
     @media (max-width: 768px) {
