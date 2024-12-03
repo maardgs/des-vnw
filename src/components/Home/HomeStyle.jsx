@@ -70,9 +70,7 @@ export const StyledHome = styled.main`
 }
 
 
-    }
-
-    @media (max-width: 768px) {
+      @media (max-width: 768px) {
       width: 80vw;
       height: 80vw;
       margin-top: 2rem;
