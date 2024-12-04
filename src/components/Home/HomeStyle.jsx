@@ -11,10 +11,19 @@ export const StyledHome = styled.main`
     padding: 10vh 5vw;
     height: 60vh;
 
+    @media (min-width: 600px) and (max-width: 1024px) {
+      padding: 8vh 4vw;
+      height: 50vh;
+      flex-direction: row;
+      text-align: center;
+    }
+
     @media (max-width: 768px) {
       flex-direction: column;
       height: auto;
+      text-align: center;
     }
+    
   }
 
   h3 {
@@ -26,6 +35,10 @@ export const StyledHome = styled.main`
     font-weight: 400;
     font-size: 3.6rem;
 
+    @media (min-width: 600px) and (max-width: 1024px) {
+      font-size: 3rem; 
+    }
+
     .highlighted {
       color: #037143;
       display: inline;
@@ -35,45 +48,81 @@ export const StyledHome = styled.main`
   p {
     font-size: 1.5rem;
     margin: 1rem 0;
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+      font-size: 1.3rem; 
+    }
   }
 
   #adContent {
     width: 80%;
+    text-align: center;
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+      width: 90%;
+    }
   }
 
- #circleWrapper {
-    position: relative; 
-    width: 80vw; 
+  #circleWrapper {
+    position: relative;
+    width: 80vw;
     height: 40vw;
     top: 30vh;
     left: 20vw;
-}
+    
+    @media (min-width: 600px) and (max-width: 1024px) {
+          width: 70vw;
+          height: 35vw;
+          top: 25vh;
+          left: 15vw;
+    
+    @media (max-width: 600px) {
+      width: 100vw;
+      height: auto;
+      top: 140vh;
+      left: 0;
+    }
 
-#backgroundCircle {
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-    border-radius: 80%; 
-    z-index: -1; 
+    }
+  }
+
+  #backgroundCircle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 80%;
+    z-index: -1;
     clip-path: polygon(0 0, 80% 0, 100% 80%, 0 80%);
     overflow: hidden;
 
-}
+    @media (min-width: 600px) and (max-width: 1024px) {
+      border-radius: 50%;
+      clip-path: polygon(0 0, 80% 0, 100% 80%, 0 80%);
+      overflow: hidden;
+    }
 
-#mainCup {
-    position: absolute; 
-    top: 22%; 
-    left: 30%; 
-    transform: translate(-50%, -50%); 
-    height: 80%; 
-    z-index: 2; 
-}
+    @media (max-width: 600px) {
+      clip-path: none;
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+    }
+ }
 
+  #mainCup {
+    position: absolute;
+    top: 22%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    z-index: 2;
 
-      @media (max-width: 768px) {
-      width: 80vw;
-      height: 80vw;
-      margin-top: 2rem;
+    @media (min-width: 600px) and (max-width: 1024px) {
+      top: 20%;
+      height: 70%;
+    }    
+    @media (max-width: 768px) {
+      left: 50%;
     }
   }
 
@@ -96,6 +145,10 @@ export const StyledHome = styled.main`
           cursor: pointer;
           transform: rotate(10deg) translateY(-10px);
         }
+
+        @media (min-width: 600px) and (max-width: 1024px) {
+          height: 10vh;
+        }
       }
     }
   }
@@ -109,14 +162,25 @@ export const StyledHome = styled.main`
     border: none;
     width: 15vw;
     height: 5vh;
-    
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+
     &:hover {
       cursor: pointer;
       background-color: #195324;
     }
-
-    @media (max-width: 768px) {
-      width: 70%;
+    @media (min-width: 600px) and (max-width: 1024px) {
+          width: 40%;
+          font-size: 1.2rem;
     }
+    @media (max-width: 600px) {
+      width: 70%;
+      font-size: 1rem;
+      height: auto;
+      padding: 0.5rem 0;
+    }
+
+    
   }
 `;
