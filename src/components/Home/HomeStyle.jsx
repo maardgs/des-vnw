@@ -109,7 +109,7 @@ export const StyledHome = styled.main`
     border: none;
     width: 15vw;
     height: 5vh;
-
+    
     &:hover {
       cursor: pointer;
       background-color: #195324;
